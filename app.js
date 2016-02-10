@@ -19,10 +19,10 @@ if (answer1.toUpperCase === 'No'){
 }
 var answer2 = prompt('Am I good looking?');
 console.log('The user answer to Question 1 was ' + answer2);
-if (answer2 === 'Yes'){
+if (answer2.toUpperCase === 'Yes'){
   alert('You are corect!');
   console.log(userName + 'The answer is correct');
-} else if (answer2=== 'No'){
+} else if (answer2.toUpperCase === 'No'){
   alert('Sorry, you are wrong!');
   console.log('The answer was wrong')
 } else {
@@ -33,10 +33,10 @@ alert ('Very well, ' + userName + ', Now I want you to answer with a T or F')
 
 var answer3 = prompt('Am I a nice person?');
 console.log('The user answer to Question 1 was ' + answer3);
-if (answer3 === 'F'){
+if (answer3.toUpperCase === 'F'){
   alert('You are corect!');
   console.log(userName + 'The answer was correct');
-} else if (answer3 === 'T'){
+} else if (answer3.toUpperCase === 'T'){
   alert('Sorry, you are wrong!');
   console.log('The answer was wrong')
 } else {
@@ -44,12 +44,23 @@ if (answer3 === 'F'){
 }
 var answer4 = prompt('Do excercise five days a week?')
 console.log ('User answer question4' + answer4);
-if (answer4 == 'Yes'){
+if (answer4.toUpperCase == 'Yes'){
 alert('Good for you!');
 console.log('The user answer correct');
-}else if (answer4 === 'No'){
+}else if (answer4.toUpperCase === 'No'){
   alerts('Go and kill your self')
   consolo.log ('The user is a lazy dude!');
 }else{
   alert ('You should answer Yes')
 }
+alert ('Ok, ' + userName + ', if you answer correct this time you will win the game' )
+
+var answer5 ('where do I live?')
+if (answer5.toUpperCase === USA){
+  alert ('You are the winner of this game!')
+  consolo.log('The user won the game');
+}else{
+  console.log('The user lost the game')
+};
+
+  
