@@ -31,7 +31,7 @@ if (answer2 === 'Yes'){
 
 alert ('Very well, ' + userName + ', Now I want you to answer with a T or F')
 
-var answer3 = prompt('Do I have a car?');
+var answer3 = prompt('Am I a nice person?');
 console.log('The user answer to Question 1 was ' + answer3);
 if (answer3 === 'F'){
   alert('You are corect!');
@@ -41,4 +41,15 @@ if (answer3 === 'F'){
   console.log('The answer was wrong')
 } else {
   alert('You should answer F, you better stop playing.');
+}
+var answer4 = prompt('Do excercise five days a week?')
+console.log ('User answer question4' + answer4);
+if (answer4 == 'Yes'){
+alert('Good for you!');
+console.log('The user answer correct');
+}else if (answer4 === 'No'){
+  alerts('Go and kill your self')
+  consolo.log ('The user is a lazy dude!');
+}else{
+  alert ('You should answer Yes')
 }
