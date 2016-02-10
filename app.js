@@ -51,16 +51,14 @@ console.log('The user answer correct');
   alerts('Go and kill your self')
   consolo.log ('The user is a lazy dude!');
 }else{
-  alert ('You should answer Yes')
+  alert ('You should answer Yes');
 }
-alert ('Ok, ' + userName + ', if you answer correct this time you will win the game' )
+alert('Ok, ' + userName + ', if you answer correct this time you will win the game');
 
-var answer5 ('where do I live?')
+var answer5 = prompt('where do I live?')
 if (answer5.toUpperCase === USA){
-  alert ('You are the winner of this game!')
+  alert ('You are the winner of this game!');
   consolo.log('The user won the game');
 }else{
   console.log('The user lost the game')
 };
-
-  
