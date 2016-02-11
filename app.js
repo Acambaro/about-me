@@ -67,5 +67,5 @@ console.log('The user answered incorrect');
   alert('Excelent!')
   consolo.log ('He is good!');
 }else{
-  alert ('You should have answered Y');
+  alert ('You should have answered Y,');
 };
