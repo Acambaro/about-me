@@ -4,61 +4,68 @@
 var userName = prompt('What is your name?');
 console.log('The user said their name is ' + userName);
 
-alert('Hi there, ' + userName + ', I\'m going to ask you some questions about me. Please answer Yes or No');
+alert('Hi there, ' + userName + ', I\'m going to ask you some questions about me. Please answer Y or N');
 
-var answer1 = prompt('Was I borned in the USA?');
+var answer1 = prompt('Was I borned in the America?').toUpperCase();
 console.log('The user answer to Question 1 was ' + answer1);
-if (answer1.toUpperCase === 'No'){
+if (answer1 === 'N'){
   alert('You are corect!');
   console.log(userName + ' nailed Question 1');
-} else if (answer1.toUpperCase === 'Yes'){
+} else if (answer1 === 'Y'){
   alert('Sorry, you are wrong!');
   console.log('The answer was wrong')
 } else {
-  alert('You should answer No, you lose this round.');
+  alert('You should have answered N, you lose this round.');
 }
-var answer2 = prompt('Am I good looking?');
+
+var answer2 = prompt('Am I a Latino dude?').toUpperCase();
 console.log('The user answer to Question 1 was ' + answer2);
-if (answer2.toUpperCase === 'Yes'){
+if (answer2 === 'Y'){
   alert('You are corect!');
   console.log(userName + 'The answer is correct');
-} else if (answer2.toUpperCase === 'No'){
+} else if (answer2 === 'N'){
   alert('Sorry, you are wrong!');
   console.log('The answer was wrong')
 } else {
-  alert('You should answer Yes, you lost another round.');
+  alert('You should have answered Y, you lost another round.');
 }
 
-alert ('Very well, ' + userName + ', Now I want you to answer with a T or F')
+alert ('Very well, ' + userName + ', Now I want you to answer with a T or F');
 
-var answer3 = prompt('Am I a nice person?');
+var answer3 = prompt('I\ m the nices person in the world?').toUpperCase();
 console.log('The user answer to Question 1 was ' + answer3);
-if (answer3.toUpperCase === 'F'){
+if (answer3 === 'T'){
   alert('You are corect!');
   console.log(userName + 'The answer was correct');
-} else if (answer3.toUpperCase === 'T'){
+} else if (answer3 === 'F'){
   alert('Sorry, you are wrong!');
   console.log('The answer was wrong')
 } else {
-  alert('You should answer F, you better stop playing.');
+  alert('You should have answered F, not doing very good,' + userName );
 }
-var answer4 = prompt('Do excercise five days a week?')
+
+var answer4 = prompt('I have beautiful green eyes?').toUpperCase();
 console.log ('User answer question4' + answer4);
-if (answer4.toUpperCase == 'Yes'){
-alert('Good for you!');
+if (answer4 == 'F'){
+alert('Well done!');
 console.log('The user answer correct');
-}else if (answer4.toUpperCase === 'No'){
+}else if (answer4 === 'T'){
   alerts('Go and kill your self')
   consolo.log ('The user is a lazy dude!');
 }else{
-  alert ('You should answer Yes');
-}
+  alert ('You should have answered Y');
+};
+
 alert('Ok, ' + userName + ', if you answer correct this time you will win the game');
 
-var answer5 = prompt('where do I live?')
-if (answer5.toUpperCase === USA){
-  alert ('You are the winner of this game!');
-  consolo.log('The user won the game');
+var answer5 = prompt('I have black hair?').toUpperCase();
+console.log ('User answer question5' + answer5);
+if (answer5 === 'F'){
+alert('Wrong again!');
+console.log('The user answered incorrect');
+}else if (answer5 === 'T'){
+  alert('Excelent!')
+  consolo.log ('He is good!');
 }else{
-  console.log('The user lost the game')
+  alert ('You should have answered Y');
 };
