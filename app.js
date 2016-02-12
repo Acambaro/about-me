@@ -59,17 +59,17 @@ console.log('The user answer to Question 1 was ' + answer3);
 
 function response3(answer3) {
   if (answer3 === 'T'){
-    alert('You are corect!');
-    printAlert('alert','printId');
+    //alert('You are corect!');
+    printAlert('You are corect!','print5');
     tally++;
     console.log(userName + 'The answer was correct');
   } else if (answer3 === 'F'){
-    alert('Sorry, you are wrong!');
-    printAlert('alert','printId');
+    //alert('Sorry, you are wrong!');
+    printAlert('Sorry, you are wrong!','print5');
     console.log('The answer was wrong')
   } else {
-    alert('You should have answered F, not doing very good,' + userName );
-    printAlert('alert','printId');
+    //alert('You should have answered F, not doing very good,' + userName );
+    printAlert('You should have answered F, not doing very good,','print5');
   }
 };
 response3(answer3);
@@ -79,40 +79,40 @@ console.log ('User answer question4' + answer4);
 
 function response4(answer4) {
   if (answer4 == 'F'){
-    alert('Well done!');
-    printAlert('alert','printId');
+    //alert('Well done!');
+    printAlert('Well done!','print6');
     tally++;
     console.log('The user answer correct');
   }else if (answer4 === 'T'){
-    alert('Go and kill your self');
-    printAlert('alert','printId');
+    //alert('Go and kill your self');
+    printAlert('Go and kill yourself','print6');
     console.log ('The user is a lazy dude!');
   }else{
-    alert ('You should have answered F');
-    printAlert('alert','printId');
+    //alert ('You should have answered F');
+    printAlert('You should have answered F','print6');
   }
 };
 response4(answer4);
 
-alert('Ok, ' + userName + ', if you answer correct this time you will win the game');
-printAlert('alert','printId');
+//alert('Ok, ' + userName + ', if you answer correct this time you will win the game');
+printAlert('Ok, ' + userName + ', if you answer correct this time you will win the game','print7');
 
 var answer5 = prompt('I have black hair?').toUpperCase();
 console.log ('User answer question5' + answer5);
 
 function response5(answer5) {
   if (answer5 === 'F'){
-    alert('Wrong again!');
-    printAlert('alert','printId');
+    //alert('Wrong again!');
+    printAlert('Wrong again!','print8');
     console.log('The user answered incorrect');
   }else if (answer5 === 'T'){
-    alert('Excelent!');
-    printAlert('alert','printId');
+    //alert('Excelent!');
+    printAlert('Excelent!','print8');
     tally++;
-    consolo.log ('He is good!');
+    console.log ('He is good!');
   }else{
-    alert ('You should have answered T');
-    printAlert('alert','printId');
+    //alert ('You should have answered T');
+    printAlert('You should have answered T','print8');
   }
 };
 response5(answer5);
@@ -128,16 +128,16 @@ for (i= 0; i < 4; i++){
   function response6(bYear) {
     if(bYear < 1997){
       alert('Your guess was too low, go higher!');
-      printAlert('alert','printId');
+      printAlert('Your guess was too low, go higher!','print9');
     } else if(bYear > 1997) {
       alert('You guess too high');
-      printAlert('alert','printId');
+      printAlert('You guess too high','print9');
     } else if(isNaN(bYear)){
       alert('Please imput a number!');
-      printAlert('alert','printId');
+      printAlert('Please imput a number!','print9');
     } else if(bYear === 1997){
       alert('You are correct!');
-      printAlert('alert','printId');
+      printAlert('You are correct!','print9');
       tally++;
       i = 4;
     }
@@ -164,15 +164,15 @@ function response7(answer){
   }
 
   if (correct){
-    alert ('You are correct!');
-    printAlert('alert','printId');
+    //alert ('You are correct!');
+    printAlert('You are correct!','print10');
     tally++;
   }
   else {
-    alert ('sorry you are wrong!');
-    printAlert('alert','printId');
+    //alert ('sorry you are wrong!');
+    printAlert('sorry you are wrong!','print10');
   }
 };
 response7(all);
-alert('Congratulations you answer ' + tally + ' out of seven question');
-printAlert('alert','printId');
+//alert('Congratulations you answer ' + tally + ' out of seven question');
+printAlert('Congratulations you answer ' + tally + ' out of seven question','print11');
